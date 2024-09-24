@@ -16,8 +16,8 @@ export default ({ command }) => {
         symbolId: 'icon-[dir]-[name]',
       }),
       viteMockServe({
-        mockPath: 'mock',
-        enable: command === 'serve',
+        mockPath: 'mock', // mock文件夹路径
+        enable: true, // 只有开发环境才开启mock
       }),
     ],
     resolve: {
@@ -27,9 +27,9 @@ export default ({ command }) => {
     },
     css: {
       preprocessorOptions: {
-        scss: {
+        less: {
           javascriptEnabled: true,
-          additionalData: '@import "./src/styles/variable.scss";',
+          additionalData: '@import "./src/styles/variable.less";',
         },
       },
     },

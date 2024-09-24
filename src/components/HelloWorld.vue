@@ -41,13 +41,13 @@ const count = ref(0)
   <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
 </template>
 
-<style scoped lang="scss">
+<style scoped lang="less">
 .read-the-docs {
   color: #888;
 }
-div{
+div {
   h1 {
-    color: $color;
+    color: @color;
   }
 }
 </style>

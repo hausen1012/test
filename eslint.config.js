@@ -39,6 +39,7 @@ export default [
           shallowOnly: true,
         },
       ],
+      "vue/multi-word-component-names": "off",
     },
   },
   /**
