@@ -9,18 +9,18 @@ import gloablComponent from './components/index'
 import '@/styles/index.less'
 import { createPinia } from 'pinia'
 
-import {loginApi} from '@/api/login'
+import { loginApi } from '@/api/login'
 
 loginApi({
   username: 'admin',
-  password: '111111'
+  password: '111111',
 })
-.then(response => {
-  console.log(response.data)
-})
-.catch(error => {
-  console.error('Error:', error)
-});
+  .then((response) => {
+    console.log(response.data)
+  })
+  .catch((error) => {
+    console.error('Error:', error)
+  })
 
 const app = createApp(App)
 app.use(ElementPlus, {
